@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leaderboard - 11:59 PM</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+body{
+    background:#f5f7fb;
+}
+
+.sidebar{
+    height:100vh;
+    width:250px;
+    background:#212529;
+    position:fixed;
+}
+
+.sidebar h3{
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.sidebar a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:15px;
+}
+
+.sidebar a:hover{
+    background:#343a40;
+}
+
+.main{
+    margin-left:250px;
+    padding:30px;
+}
+
+.rank-card{
+    border-radius:15px;
+}
+
+.top-player{
+    text-align:center;
+    padding:20px;
+}
+
+.medal{
+    font-size:40px;
+}
+
+.rank-number{
+    font-weight:bold;
+    font-size:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<h3>⏰ 11:59 PM</h3>
+
+<a href="dashboard.html">🏠 Dashboard</a>
+<a href="assignments.html">📝 Assignments</a>
+<a href="calendar.html">📅 Calendar</a>
+<a href="leaderboard.html">🏆 Leaderboard</a>
+<a href="achievements.html">🎖 Achievements</a>
+<a href="profile.html">👤 Profile</a>
+
+</div>
+
+<!-- Main -->
+
+<div class="main">
+
+<h2 class="mb-4">🏆 Student Leaderboard</h2>
+
+<p class="text-muted">
+Compete with students and earn XP by completing assignments and maintaining study streaks.
+</p>
+
+<!-- Tabs -->
+
+<ul class="nav nav-tabs mb-4">
+
+<li class="nav-item">
+<a class="nav-link active" href="#">
+🏫 Local
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">
+🇻🇳 National
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">
+🌍 Global
+</a>
+</li>
+
+</ul>
+
+<!-- Top 3 -->
+
+<div class="row mb-5">
+
+<div class="col-md-4">
+<div class="card rank-card shadow">
+<div class="card-body top-player">
+
+<div class="medal">🥈</div>
+
+<h5>Alex</h5>
+
+<p>Level 15</p>
+
+<h4>2,450 XP</h4>
+
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card rank-card shadow border-warning">
+<div class="card-body top-player">
+
+<div class="medal">🥇</div>
+
+<h4>Emma</h4>
+
+<p>Level 18</p>
+
+<h3>2,900 XP</h3>
+
+<span class="badge bg-warning text-dark">
+Top Student
+</span>
+
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card rank-card shadow">
+<div class="card-body top-player">
+
+<div class="medal">🥉</div>
+
+<h5>Saw</h5>
+
+<p>Level 14</p>
+
+<h4>2,100 XP</h4>
+
+</div>
+</div>
+</div>
+
+</div>
+
+<!-- Ranking Table -->
+
+<div class="card shadow">
+
+<div class="card-header">
+Top Students
+</div>
+
+<div class="card-body">
+
+<table class="table table-hover">
+
+<thead>
+<tr>
+<th>Rank</th>
+<th>Student</th>
+<th>Level</th>
+<th>XP</th>
+<th>Badge</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td class="rank-number">1</td>
+<td>Emma</td>
+<td>18</td>
+<td>2900</td>
+<td>👑</td>
+</tr>
+
+<tr>
+<td class="rank-number">2</td>
+<td>Alex</td>
+<td>15</td>
+<td>2450</td>
+<td>🔥</td>
+</tr>
+
+<tr>
+<td class="rank-number">3</td>
+<td>Saw</td>
+<td>14</td>
+<td>2100</td>
+<td>⭐</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td>John</td>
+<td>12</td>
+<td>1800</td>
+<td>🏅</td>
+</tr>
+
+<tr>
+<td>5</td>
+<td>Lisa</td>
+<td>11</td>
+<td>1700</td>
+<td>🏅</td>
+</tr>
+
+<tr>
+<td>6</td>
+<td>Michael</td>
+<td>10</td>
+<td>1600</td>
+<td>🏅</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+<!-- Your Rank -->
+
+<div class="card shadow mt-5">
+
+<div class="card-body">
+
+<h4>Your Position</h4>
+
+<p>
+🏆 Local Rank: #3
+</p>
+
+<p>
+🇻🇳 National Rank: #28
+</p>
+
+<p>
+🌍 Global Rank: #412
+</p>
+
+<div class="progress">
+
+<div class="progress-bar" style="width:75%">
+75% to Level 15
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
