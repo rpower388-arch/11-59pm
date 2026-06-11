@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11:59 PM - Student Assignment Planner</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .hero{
+            background: linear-gradient(135deg,#0d6efd,#6f42c1);
+            color:white;
+            padding:100px 20px;
+            text-align:center;
+        }
+
+        .feature-card{
+            transition:0.3s;
+        }
+
+        .feature-card:hover{
+            transform:translateY(-5px);
+        }
+
+        .rank-card{
+            border-left:5px solid #0d6efd;
+        }
+
+        footer{
+            background:#212529;
+            color:white;
+            padding:20px;
+            text-align:center;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container">
+    <a class="navbar-brand fw-bold" href="#">11:59 PM</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Leaderboard</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Achievements</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+        </ul>
+    </div>
+</div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="container">
+        <h1 class="display-4 fw-bold">
+            Never Miss Another Deadline
+        </h1>
+
+        <p class="lead mt-3">
+            Manage assignments, earn achievements, compete with friends,
+            and become the top student.
+        </p>
+
+        <a href="#" class="btn btn-light btn-lg mt-3">
+            Get Started
+        </a>
+    </div>
+</section>
+
+<!-- About -->
+<section class="container py-5">
+    <h2 class="text-center mb-4">About Our Project</h2>
+
+    <p class="text-center">
+        11:59 PM is a student-focused productivity platform designed
+        to help students organize assignments, track deadlines,
+        earn rewards, and showcase achievements.
+        We aim to reduce stress while making academic success fun
+        and motivating.
+    </p>
+</section>
+
+<!-- Features -->
+<section class="container py-5">
+    <h2 class="text-center mb-5">Key Features</h2>
+
+    <div class="row">
+
+        <div class="col-md-4 mb-4">
+            <div class="card feature-card h-100">
+                <div class="card-body">
+                    <h4>📅 Assignment Planner</h4>
+                    <p>
+                        Track assignments and deadlines in one place.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card feature-card h-100">
+                <div class="card-body">
+                    <h4>🏆 Student Rankings</h4>
+                    <p>
+                        Compete on Local, National and Global leaderboards.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card feature-card h-100">
+                <div class="card-body">
+                    <h4>🎖 Achievements</h4>
+                    <p>
+                        Unlock badges and share academic milestones.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Ranking -->
+<section class="bg-light py-5">
+<div class="container">
+    <h2 class="text-center mb-5">
+        Top Students
+    </h2>
+
+    <div class="card rank-card mb-3">
+        <div class="card-body">
+            🥇 Local Ranking
+        </div>
+    </div>
+
+    <div class="card rank-card mb-3">
+        <div class="card-body">
+            🥈 National Ranking
+        </div>
+    </div>
+
+    <div class="card rank-card">
+        <div class="card-body">
+            🥉 Global Ranking
+        </div>
+    </div>
+
+</div>
+</section>
+
+<!-- Achievements -->
+<section class="container py-5">
+
+<h2 class="text-center mb-5">
+Student Achievement Feed
+</h2>
+
+<div class="card mb-3">
+    <div class="card-body">
+        🎉 Saw completed 50 assignments this semester.
+    </div>
+</div>
+
+<div class="card mb-3">
+    <div class="card-body">
+        🏅 Alex earned the Time Management Master badge.
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        🌟 Emma reached Top 10 National Ranking.
+    </div>
+</div>
+
+</section>
+
+<!-- Partners -->
+<section class="bg-light py-5">
+
+<div class="container">
+
+<h2 class="text-center mb-5">
+Partner Schools & Universities
+</h2>
+
+<div class="row text-center">
+
+<div class="col-md-3">
+    <div class="card">
+        <div class="card-body">
+            University Partner
+        </div>
+    </div>
+</div>
+
+<div class="col-md-3">
+    <div class="card">
+        <div class="card-body">
+            School Partner
+        </div>
+    </div>
+</div>
+
+<div class="col-md-3">
+    <div class="card">
+        <div class="card-body">
+            College Partner
+        </div>
+    </div>
+</div>
+
+<div class="col-md-3">
+    <div class="card">
+        <div class="card-body">
+            Education Partner
+        </div>
+    </div>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- Premium -->
+<section class="container py-5">
+
+<h2 class="text-center mb-5">
+Premium Membership
+</h2>
+
+<div class="card text-center">
+<div class="card-body">
+
+<h3>$4.99/month</h3>
+
+<p>
+Unlimited assignments, premium themes,
+exclusive profile customization, advanced analytics,
+and achievement badges.
+</p>
+
+<button class="btn btn-primary">
+Upgrade Now
+</button>
+
+</div>
+</div>
+
+</section>
+
+<footer>
+    <h5>11:59 PM</h5>
+    <p>Never Miss Another Deadline</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
