@@ -13,18 +13,26 @@ body{
 }
 
 .sidebar{
+    position:fixed;
+    left:0;
+    top:0;
+    width:250px;
     height:100vh;
     background:#212529;
+    z-index:1000;
+}
+
+.sidebar h3{
     color:white;
-    position:fixed;
-    width:250px;
+    text-align:center;
+    padding:20px;
 }
 
 .sidebar a{
+    display:block;
     color:white;
     text-decoration:none;
-    display:block;
-    padding:15px;
+    padding:15px 20px;
 }
 
 .sidebar a:hover{
@@ -36,307 +44,144 @@ body{
     padding:30px;
 }
 
-.stat-card{
+.card{
     border:none;
-    border-radius:15px;
-    transition:.3s;
-}
-
-.stat-card:hover{
-    transform:translateY(-5px);
-}
-
-.profile-card{
-    border-radius:20px;
-}
-
-.badge-card{
-    border-radius:15px;
-}
-
-.assignment-card{
-    border-left:5px solid #0d6efd;
-}
-
-.feed-card{
     border-radius:15px;
 }
 </style>
-</head>
 
+</head>
 <body>
 
 <!-- Sidebar -->
 
 <div class="sidebar">
 
-    <h3 class="text-center py-4">
-        ⏰ 11:59 PM
-    </h3>
+    <h3>⏰ 11:59 PM</h3>
 
-    <a href="#">🏠 Dashboard</a>
-    <a href="#">📝 Assignments</a>
-    <a href="#">📅 Calendar</a>
-    <a href="#">🏆 Leaderboard</a>
-    <a href="#">🎖 Achievements</a>
-    <a href="#">👤 Profile</a>
-    <a href="#">⚙ Settings</a>
+    <a href="index.html">🏠 Home</a>
+    <a href="dashboard.html">📊 Dashboard</a>
+    <a href="assignments.html">📝 Assignments</a>
+    <a href="calendar.html">📅 Calendar</a>
+    <a href="leaderboard.html">🏆 Leaderboard</a>
+    <a href="achievements.html">🎖 Achievements</a>
+    <a href="profile.html">👤 Profile</a>
 
 </div>
 
-<!-- Main -->
+<!-- Main Content -->
 
 <div class="main">
 
-<div class="container-fluid">
+    <h2>Welcome Back, Student 👋</h2>
 
-<!-- Welcome -->
-
-<div class="row mb-4">
-
-<div class="col-md-8">
-    <h2>Welcome Back, Saw 👋</h2>
     <p class="text-muted">
-        Stay on top of your deadlines and climb the leaderboard.
+        Manage your assignments, earn achievements, and climb the rankings.
     </p>
-</div>
 
-<div class="col-md-4">
-    <div class="card profile-card shadow">
-        <div class="card-body text-center">
-            <img src="https://via.placeholder.com/80"
-                 class="rounded-circle mb-2">
+    <!-- Stats -->
 
-            <h5>Saw</h5>
-            <p>Level 12 Student</p>
+    <div class="row mt-4">
 
-            <span class="badge bg-warning">
-                Local Rank #15
-            </span>
-        </div>
-    </div>
-</div>
-
-</div>
-
-<!-- Statistics -->
-
-<div class="row mb-4">
-
-<div class="col-md-3">
-    <div class="card stat-card shadow">
-        <div class="card-body text-center">
-            <h3>4</h3>
-            <p>Assignments Due</p>
-        </div>
-    </div>
-</div>
-
-<div class="col-md-3">
-    <div class="card stat-card shadow">
-        <div class="card-body text-center">
-            <h3>23</h3>
-            <p>Completed</p>
-        </div>
-    </div>
-</div>
-
-<div class="col-md-3">
-    <div class="card stat-card shadow">
-        <div class="card-body text-center">
-            <h3>12</h3>
-            <p>Day Streak</p>
-        </div>
-    </div>
-</div>
-
-<div class="col-md-3">
-    <div class="card stat-card shadow">
-        <div class="card-body text-center">
-            <h3>1,250</h3>
-            <p>XP Points</p>
-        </div>
-    </div>
-</div>
-
-</div>
-
-<!-- Assignments + Notifications -->
-
-<div class="row">
-
-<div class="col-md-8">
-
-<h4 class="mb-3">Upcoming Assignments</h4>
-
-<div class="card assignment-card mb-3">
-    <div class="card-body">
-        <h5>Database Project</h5>
-        <p>Due: June 15</p>
-
-        <div class="progress">
-            <div class="progress-bar" style="width:70%">
-                70%
+        <div class="col-md-3 mb-3">
+            <div class="card shadow">
+                <div class="card-body text-center">
+                    <h3>4</h3>
+                    <p>Assignments Due</p>
+                </div>
             </div>
         </div>
-    </div>
-</div>
 
-<div class="card assignment-card mb-3">
-    <div class="card-body">
-        <h5>Business Consultancy Report</h5>
-        <p>Due: June 18</p>
-
-        <div class="progress">
-            <div class="progress-bar" style="width:45%">
-                45%
+        <div class="col-md-3 mb-3">
+            <div class="card shadow">
+                <div class="card-body text-center">
+                    <h3>23</h3>
+                    <p>Completed</p>
+                </div>
             </div>
         </div>
-    </div>
-</div>
 
-<div class="card assignment-card">
-    <div class="card-body">
-        <h5>Web Development Project</h5>
-        <p>Due: June 20</p>
-
-        <div class="progress">
-            <div class="progress-bar" style="width:20%">
-                20%
+        <div class="col-md-3 mb-3">
+            <div class="card shadow">
+                <div class="card-body text-center">
+                    <h3>2100</h3>
+                    <p>XP Points</p>
+                </div>
             </div>
         </div>
+
+        <div class="col-md-3 mb-3">
+            <div class="card shadow">
+                <div class="card-body text-center">
+                    <h3>#3</h3>
+                    <p>Local Rank</p>
+                </div>
+            </div>
+        </div>
+
     </div>
-</div>
 
-</div>
+    <!-- Quick Actions -->
 
-<!-- Notifications -->
+    <h4 class="mt-4 mb-3">Quick Access</h4>
 
-<div class="col-md-4">
+    <div class="row">
 
-<h4 class="mb-3">Notifications</h4>
+        <div class="col-md-4 mb-3">
+            <a href="assignments.html" class="btn btn-primary w-100 p-3">
+                📝 Assignment Manager
+            </a>
+        </div>
 
-<div class="card shadow mb-3">
-    <div class="card-body">
-        ⚠ Database Project due in 2 days
+        <div class="col-md-4 mb-3">
+            <a href="calendar.html" class="btn btn-success w-100 p-3">
+                📅 Calendar
+            </a>
+        </div>
+
+        <div class="col-md-4 mb-3">
+            <a href="leaderboard.html" class="btn btn-warning w-100 p-3">
+                🏆 Leaderboard
+            </a>
+        </div>
+
     </div>
-</div>
 
-<div class="card shadow mb-3">
-    <div class="card-body">
-        ⚠ Group Meeting tomorrow
+    <div class="row">
+
+        <div class="col-md-6 mb-3">
+            <a href="achievements.html" class="btn btn-info w-100 p-3">
+                🎖 Achievements
+            </a>
+        </div>
+
+        <div class="col-md-6 mb-3">
+            <a href="profile.html" class="btn btn-dark w-100 p-3">
+                👤 Profile
+            </a>
+        </div>
+
     </div>
-</div>
 
-<div class="card shadow">
-    <div class="card-body">
-        🎉 New Achievement Unlocked
+    <!-- Recent Activity -->
+
+    <div class="card shadow mt-4">
+        <div class="card-body">
+
+            <h4>Recent Activity</h4>
+
+            <hr>
+
+            <p>🎉 Completed Business Consultancy Report</p>
+
+            <p>🏆 Reached Local Rank #3</p>
+
+            <p>⭐ Unlocked Assignment Master Badge</p>
+
+            <p>🔥 Maintained a 12-Day Study Streak</p>
+
+        </div>
     </div>
-</div>
-
-</div>
-
-</div>
-
-<!-- Achievements + Leaderboard -->
-
-<div class="row mt-5">
-
-<div class="col-md-6">
-
-<h4>Achievements</h4>
-
-<div class="card badge-card shadow mb-2">
-    <div class="card-body">
-        🏅 First Assignment Completed
-    </div>
-</div>
-
-<div class="card badge-card shadow mb-2">
-    <div class="card-body">
-        🔥 7-Day Study Streak
-    </div>
-</div>
-
-<div class="card badge-card shadow">
-    <div class="card-body">
-        🔒 Productivity Master
-    </div>
-</div>
-
-</div>
-
-<div class="col-md-6">
-
-<h4>Leaderboard</h4>
-
-<div class="card shadow">
-
-<div class="card-body">
-
-<table class="table">
-
-<tr>
-<th>Rank</th>
-<th>Student</th>
-<th>XP</th>
-</tr>
-
-<tr>
-<td>🥇</td>
-<td>Emma</td>
-<td>2400</td>
-</tr>
-
-<tr>
-<td>🥈</td>
-<td>Alex</td>
-<td>2250</td>
-</tr>
-
-<tr>
-<td>🥉</td>
-<td>Saw</td>
-<td>2100</td>
-</tr>
-
-</table>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Social Feed -->
-
-<div class="mt-5">
-
-<h4>Achievement Feed</h4>
-
-<div class="card feed-card shadow mb-3">
-    <div class="card-body">
-        🎉 Emma completed 100 assignments this semester.
-    </div>
-</div>
-
-<div class="card feed-card shadow mb-3">
-    <div class="card-body">
-        🏆 Alex reached Top 5 National Ranking.
-    </div>
-</div>
-
-<div class="card feed-card shadow">
-    <div class="card-body">
-        ⭐ Saw unlocked Study Streak Badge.
-    </div>
-</div>
-
-</div>
-
-</div>
 
 </div>
 
